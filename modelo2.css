@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.loading {
+  animation: rotacao 1s ease-in-out infinite;
+  width: 80px;
+  height: 80px;
+  border: 8px solid #51d4db;
+  border-top-color: transparent;
+  border-radius: 50%;
+}
+
+@keyframes rotacao {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
